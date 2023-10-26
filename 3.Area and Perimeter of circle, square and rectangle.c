@@ -30,6 +30,10 @@ int main ()
     printf("Area: %.f\n",circleArea);
     printf("Perimeter: %.f\n",circlePerimeter);
 
+    printf("Square: \n");
+    printf("Area: %.f\n",squareArea);
+    printf("Perimeter: %.f\n",squarePerimeter);
+
     printf("\nRectangle: \n");
     printf("Area: %.2f\n", rectangleArea);
     printf("Perimeter: %.2f\n",rectanglePerimeter);
