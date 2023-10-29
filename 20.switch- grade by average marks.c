@@ -1,9 +1,9 @@
 #include<stdio.h>
 int main ()
-
 {
     int marks ;
-char grade;
+    char grade;
+   
     printf("Enter the student's marks: ");
     scanf("%d", &marks);
 
@@ -17,16 +17,20 @@ char grade;
             break ;
         case 7:
         case 6:
-        grade = '1';
-                break;
-                case 5:
+            grade = '1';
+            break;
+        case 5:
             grade = '2';
             break;
-            default:
-                case 4:
-                    grade ='F';\
-                    break;
+        case 4:
+            grade = '3';
+            break;
+        default:
+            grade ='F';
+            break;
     }
     printf("The grade obtained by the student is: %c\n",grade);
+    
     return 0;
 }
+
