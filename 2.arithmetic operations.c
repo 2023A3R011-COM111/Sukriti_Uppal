@@ -2,28 +2,30 @@
 int main()
 {
     int num1, num2;
-    float a,b,c,d,e;
-
-    printf("enter the first integer: ");
+    float sum,difference,product,quotient,modulus;
+    
+    //input two integers from user
+    printf("Enter the first integer: ");
     scanf("%d", &num1);
 
-    printf("enter the second integer: ");
+    printf("Enter the second integer: ");
     scanf("%d", &num2);
 
-    a= num1+num2;
-    printf("sum: %f\n", a);
+    //formulas and result print
+    sum= num1+num2;
+    printf("sum: %f\n", sum);
 
-    b= num1-num2;
-    printf("difference: %f\n", b);
+    difference= num1-num2;
+    printf("difference: %f\n", difference);
 
-    c= num1*num2;
-    printf("product: %f\n", c);
+    product= num1*num2;
+    printf("product: %f\n", product);
 
-    d= num1/num2;
-    printf("remainder: %f\n", d);
+    quotient= num1/num2;
+    printf("remainder: %f\n", quotient);
 
-    e= num1%num2;
-    printf("modulus: %f\n", e);
+    modulus= num1%num2;
+    printf("modulus: %f\n", modulus);
 
     return 0;
 }
