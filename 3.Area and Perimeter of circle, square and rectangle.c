@@ -1,8 +1,10 @@
 #include <stdio.h>
 int main ()
 {
-    float radius, side, length, width,circleArea,circlePerimeter,squareArea,squarePerimeter,rectangleArea,rectanglePerimeter;
-    //Get input values from the user
+    float radius, side, length, breadth,circleArea,circlePerimeter,squareArea,squarePerimeter,rectangleArea,rectanglePerimeter;
+   
+    //1.input from user
+    //2.Calculate the area and perimeter for each shape and display the calculated values
     printf("Enter the radius of the circle: ");
     scanf("%f",&radius);
 
@@ -13,28 +15,30 @@ int main ()
     scanf("%f",&length);
 
     printf("Enter the width of the rectangle: ");
-    scanf("%f",&width);
+    scanf("%f",&breadth);
 
-    //Calculate the area and perimeter for each shape
+    printf("\n");
+    //circle
     circleArea =3.142 * radius * radius;
     circlePerimeter =2*3.142*radius;
 
-    squareArea = side*side;
-    squarePerimeter = 4*side;
-
-    rectangleArea= length*width;
-    rectanglePerimeter=2*(length+width);
-
-    //Display the calculated values
-    printf("Circle: \n");
+    printf("Circle-> \n");
     printf("Area: %.f\n",circleArea);
     printf("Perimeter: %.f\n",circlePerimeter);
 
-    printf("\nSquare: \n");
+    //square
+    squareArea = side*side;
+    squarePerimeter = 4*side;
+    
+    printf("\nSquare-> \n");
     printf("Area: %.f\n",squareArea);
     printf("Perimeter: %.f\n",squarePerimeter);
 
-    printf("\nRectangle: \n");
+    //rectangle
+    rectangleArea= length*breadth;
+    rectanglePerimeter=2*(length+breadth);
+    
+    printf("\nRectangle-> \n");
     printf("Area: %.2f\n", rectangleArea);
     printf("Perimeter: %.2f\n",rectanglePerimeter);
 
