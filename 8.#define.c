@@ -1,15 +1,16 @@
 #include <stdio.h> 
-// C Program to illustrate how to use #define to declare 
-// Defining macros with constant value 
-#define PI 3.14159265359 
+// Program to illustrate how to use #define to declare 
+#define PI 3.14
 int main() 
 { 
-    int radius=21;
-	int area;
+    int radius, CircleArea;
+	
+	printf("Enter the value of radius of circle: ");
+	scanf("%d",&radius);
 
-    area = PI * radius * radius; 
-
-	printf("Area of Circle of radius %d: %d", radius, area); 
+    CircleArea = PI * radius * radius;
+    
+    printf("Area of Circle of radius %d: %d", radius, CircleArea ); 
 
 	return 0; 
 }
