@@ -2,19 +2,20 @@
 int main()
 {
      // Program for swapping two variables without using a third variable
-    int a, b;
-    printf("Enter the two numbers : ");
-    scanf("%d %d", &a, &b);
-    printf("Before swapping :- value 1 is : %d and value 2 is %d \n", a,b);
+    int var1, var2;
+    printf("Enter the two variables : ");
+    scanf("%d %d", &var1, &var2);
+    printf("Before swapping :- variable 1 is : %d and variable 2 is %d \n", var1,var2);
  
-    // Sum of both numbers is stored in 'a'
-    a = a + b;
-    // Difference of sum and original 'b' is stored in 'b'
-    b = a - b;
+    // Firstly, sum of both numbers is stored in 'var1'
+    var1 = var1 + var2;
+    // Then difference of sum and original 'var2' is stored in 'var2'
+    var2 = var1 - var2;
     // Difference of sum and new 'b' is stored in 'a'
-    a = a - b;
+    var1 = var1 - var2;
  
-    printf("After swapping :- value 1 is : %d and value 2 is : %d \n", a, b);
+    printf("After swapping :- variable 1 is : %d and variable 2 is : %d \n", var1, var2);
+    
     return 0;
 }
     
